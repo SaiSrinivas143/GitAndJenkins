@@ -33,9 +33,9 @@ public class GoogleFlights extends DriverManager{
 		
 		
         		
-//        driver.findElement(By.xpath("//input[@placeholder='Where from?']")).sendKeys(start);
-//
-//        driver.findElement(By.xpath("//*[@role='listbox']//*[@role='option']//div[contains(normalize-space(),'"+start+"')]")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Where from?']")).sendKeys(start);
+
+        driver.findElement(By.xpath("//*[@role='listbox']//*[@role='option']//div[contains(normalize-space(),'"+start+"')]")).click();
 
         driver.findElement(By.xpath("//input[@placeholder='Where to?']")).sendKeys(dest);
 
