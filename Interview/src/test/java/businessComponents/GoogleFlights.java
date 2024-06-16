@@ -31,9 +31,9 @@ public class GoogleFlights extends DriverManager{
 //		System.out.println(prop.getProperty("ApplicationUrl"));
 		driver.get(prop.getProperty("ApplicationUrl"));
 		
-        driver.findElement(By.xpath("//input[@placeholder='Where from?']")).sendKeys(start);
-
-        driver.findElement(By.xpath("//*[@role='listbox']//*[@role='option']//div[contains(normalize-space(),'"+start+"')]")).click();
+//        driver.findElement(By.xpath("//input[@placeholder='Where from?']")).sendKeys(start);
+//
+//        driver.findElement(By.xpath("//*[@role='listbox']//*[@role='option']//div[contains(normalize-space(),'"+start+"')]")).click();
 
         driver.findElement(By.xpath("//input[@placeholder='Where to?']")).sendKeys(dest);
 
@@ -43,9 +43,9 @@ public class GoogleFlights extends DriverManager{
         
         customUtils.hardWait(2);
         
-        driver.findElement(By.xpath("//*[@role='grid']/div[1]//*[normalize-space()='12' and @role='button']")).click();
+        driver.findElement(By.xpath("//*[@role='grid']/div[1]//*[normalize-space()='22' and @role='button']")).click();
 
-        driver.findElement(By.xpath("//*[@role='grid']/div[1]//*[normalize-space()='13' and @role='button']")).click();
+        driver.findElement(By.xpath("//*[@role='grid']/div[1]//*[normalize-space()='23' and @role='button']")).click();
 
         driver.findElement(By.xpath("//*[@role='grid']/../../../../../..//button[normalize-space()='Done']")).click();
 

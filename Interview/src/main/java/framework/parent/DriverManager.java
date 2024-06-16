@@ -6,9 +6,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.collections4.map.HashedMap;
+import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -54,6 +56,8 @@ public class DriverManager {
 			    options.setExperimentalOption("prefs",prefs);
 
 			    driver = new ChromeDriver(options);
+			    driver.manage().deleteAllCookies();
+			    
 			}else if(browser.equalsIgnoreCase("Edge")) {
 				WebDriverManager.edgedriver().setup();
 
