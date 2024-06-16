@@ -28,7 +28,7 @@ public class GoogleFlights extends DriverManager{
 	public void printPrice() {
 		String dest="Bengaluru";
 		String start="Hyderabad, Telangana";
-		System.out.println(prop.getProperty("ApplicationUrl"));
+//		System.out.println(prop.getProperty("ApplicationUrl"));
 		driver.get(prop.getProperty("ApplicationUrl"));
 		
         driver.findElement(By.xpath("//input[@placeholder='Where from?']")).sendKeys(start);
